@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="icon" href="images/peakpx7.jpg">
+    
+</head>
+
+<body>
+    <div class="header">
+        <h1>Attendance System</h1>
+        <p class="author">by Jayrold Tabalina</p>
+    </div>
+    <div class="container">
+
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label for="account_type">Account Type:</label>
+            <select name="account_type" id="account_type">
+                <option value="regular">Regular</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+
+</body>
+
+</html>

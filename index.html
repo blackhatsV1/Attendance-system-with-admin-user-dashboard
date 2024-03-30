@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="images/peakpx7.jpg">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Attendance System</h1>
+        <p class="author">by Jayrold Tabalina</p>
+    </div>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <label for="account_type">Account Type:</label>
+            <select name="account_type" id="account_type">
+                <option value="regular">Regular</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+</body>
+
+</html>
